@@ -1,0 +1,44 @@
+:root{
+    --btnHeight:2.5rem;
+    --btnWidth:20.0rem;
+    --imageHeight:30.0rem;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.animals{
+    display: flex;
+    flex-direction: rows;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cat,.dog{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: max-content;
+    height: max-content;
+}
+.catResult >img, .dogResult>img{
+    width:var(--btnWidth);
+    height: var(--imageHeight);
+
+}
+
+button{
+    border-radius: 0.5rem;
+    width: var(--btnWidth);
+    height: var(--btnHeight);
+    color: black;
+    cursor: pointer;
+}   
